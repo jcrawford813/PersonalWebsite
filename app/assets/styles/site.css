@@ -1,0 +1,35 @@
+body {
+    background: url('../images/content-bg.png') top left repeat;
+}
+
+.green {
+    color:green;
+}
+
+.navbar {
+    margin-bottom:0;
+}
+
+.jumbotron {
+    background-color: #337ab7;
+    color:white;
+}
+
+#blurb, .middle, .middle-contacts {
+    width:85%;
+    margin:auto;
+}
+
+.middle-contacts {
+    width: 35%;
+}
+
+.media-middle img {
+    height:100px;
+    width:100px;
+}
+
+.tag {
+    display:inline-block;
+    margin-right: 5px;
+}

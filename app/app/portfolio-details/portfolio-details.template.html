@@ -1,0 +1,56 @@
+<div class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <span class="navbar-brand">Details for {{ $ctrl.project.title }}</span>
+        </div>
+    </div>
+</div>
+
+<div class="middle" style="margin-top:30px">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            Description
+        </div>
+        <div class="panel-body">
+            {{ $ctrl.project.description }}
+        </div>
+    </div>
+    
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            Category
+        </div>
+        <div class="panel-body">
+            <span class="label label-info tag">{{ $ctrl.project.category }}</span>
+        </div>
+    </div>
+    
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            Highlights
+        </div>
+        <div class="panel-body">
+            <ul>
+                <li ng-repeat="highlight in $ctrl.project.highlights">{{ highlight }}</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            Comments
+        </div>
+        <div class="panel-body">
+            {{ $ctrl.project.comments }}
+        </div>
+    </div>
+    
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            Technologies
+        </div>
+        <div class="panel-body">
+            <span class="label label-info tag" ng-repeat="tag in $ctrl.project.tags">{{ tag }}</span>
+        </div>
+    </div>
+</div>

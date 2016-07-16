@@ -1,0 +1,27 @@
+[
+    {
+        "title": "Email",
+        "description": "Send me an email",
+        "link": "mailto:site@mycodinglife.com",
+        "icon": "e.png"
+    },
+    {
+        "title": "LinkedIn",
+        "description": "Connect with me on LinkedIn",
+        "link": "https://www.linkedin.com/in/jcrawfo3/",
+        "icon": "li.png"
+    },
+    {
+        "title": "Google+",
+        "description": "Follow me on Google+",
+        "link": "https://google.com/+JimCrawfordHere",
+        "icon": "gp.png"
+    },
+    {
+        "title": "Github",
+        "description": "View my Github Profile",
+        "link": "",
+        "icon": "port.png"
+    }
+]
+

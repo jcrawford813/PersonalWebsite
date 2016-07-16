@@ -1,0 +1,30 @@
+<div class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <span class="navbar-brand">Application &amp; Technology Portfolio</span>
+        </div>
+        <form class="navbar-form navbar-right" role="search">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search" ng-model="$ctrl.appQuery">
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="middle" style="margin-top:30px;">
+    <div class="container">
+        <div class="col-md-6 col-lg-6" ng-repeat="project in $ctrl.projects | filter:$ctrl.appQuery">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h4><a href="#/portfolio/{{project.id}}" style="text-decoration: none; color:#fff;">{{ project.title }}</a></h4>
+                </div>
+                <div class="panel-body">                
+                    <p>{{ project.description }}</p>
+                    <div>
+                        <span class="label label-info tag" ng-repeat="tag in project.tags">{{ tag }}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

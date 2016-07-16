@@ -1,0 +1,27 @@
+<div class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <span class="navbar-brand">Contact Me</span>
+        </div>
+    </div>
+</div>
+<div class="middle" style="margin-top:30px">    
+    <div class="container">
+        <div class="col-md-6 col-lg-6" ng-repeat="contact in $ctrl.methods">
+            <div class="panel">
+                <div class="panel-body media">
+                    <div class="media-left media-middle">
+                        <a href="{{contact.link}}">
+                            <img class="media-object" ng-src="assets/images/{{contact.icon}}" />
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4>{{ contact.title }}</h4>
+                        {{ contact.description }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
