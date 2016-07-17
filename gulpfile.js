@@ -46,10 +46,9 @@ gulp.task('stylesbuild', function() {
 gulp.task('indexbuild', function () {
     gulp.src(['./app/index.html'])
             .pipe(htmlreplace({
-                css: 'assets/style/style.css',
-                lib: 'assets/scripts/libscripts.js',
-                js: 'assets/scripts/appscripts.js',
-                base: '<base href=\"http://mycodinglife.com\" target=\"_self\" />'
+                css: '/assets/style/style.css',
+                lib: '/assets/scripts/libscripts.js',
+                js: '/assets/scripts/appscripts.js'
             }))
             .pipe(htmlclean())
             .pipe(gulp.dest('./build'));

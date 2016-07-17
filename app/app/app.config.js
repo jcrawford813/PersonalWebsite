@@ -4,10 +4,10 @@ angular
         .module('personalSiteApp')
         .config(['$locationProvider', '$routeProvider',
             function config($locationProvider, $routeProvider) {
-                //$locationProvider.html5Mode(true);
+                $locationProvider.html5Mode(true);
                 
                 $routeProvider
-                        .when('/', {
+                        .when('/home', {
                             template: '<home></home>'
                         })
                         .when('/contact', {
