@@ -26,11 +26,11 @@ angular
                             template: '<home></home>'
                         });
             }])
-            .config(function (AnalyticsProvider) {
-                AnalyticsProvider
+            .config(['AnalyticsProvider', function (analytics) {
+                analytics
                 .setAccount('UA-80904823-1')
                 .useDisplayFeatures(true)
                 .useEnhancedLinkAttribution(true);
-            });
+            }]);
 
 
