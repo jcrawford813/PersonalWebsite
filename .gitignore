@@ -1,0 +1,7 @@
+node_modules/*
+build/*
+.bowerrc
+.jshintrc
+README.md
+LICENSE
+.DS_Store

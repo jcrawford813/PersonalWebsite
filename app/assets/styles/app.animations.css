@@ -1,0 +1,63 @@
+.list-fade-item.ng-enter,
+.list-fade-item.ng-leave,
+.list-fade-item.ng-move {
+    transition: 0.5s linear all;
+}
+
+.list-fade-item.ng-enter,
+.list-fade-item.ng-move {
+    height:0;
+    opacity: 0;
+    overflow: hidden;
+}
+
+.list-fade-item.ng-enter.ng-enter-active,
+.list-fade-item.ng-move.ng-move-active {
+  height: 120px;
+  opacity: 1;
+}
+
+.list-fade-item.ng-leave {
+    opacity: 1;
+    overflow:hidden;
+}
+
+.list-fade-item.ng-leave.ng-leave-active {
+  height: 0;
+  opacity: 0;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+.view-container {
+  position: relative;
+}
+
+.view-frame.ng-enter,
+.view-frame.ng-leave {
+  background: inherit;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.view-frame.ng-enter {
+  animation: 1s fade-in;
+  z-index: 100;
+}
+
+.view-frame.ng-leave {
+  animation: 0.5s fade-out;
+  z-index: 99;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes fade-out {
+  from { opacity: 1; }
+  to   { opacity: 0; }
+}

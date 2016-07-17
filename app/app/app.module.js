@@ -2,6 +2,7 @@
 
 angular.module('personalSiteApp', [
     'ngRoute',
+    'ngAnimate',
    'home',
    'contact',
    'portfolio',

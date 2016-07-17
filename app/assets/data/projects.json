@@ -273,5 +273,17 @@
             "Subversion"
           ],
     "title" : "decisionsource.com"
-  }
-]
+  },
+  { "category" : "Web Applications",
+      "comments" : "This application is a playground that I use to learn some basics about Java programming, RESTful Services, and JUnit testing. It is very simple, and is getting new commits from time to time as I want to try out new approaches and techniques.",
+      "description" : "A test application written in Java as a way to learn accepted standards and gotchas. Will eventually have the functionality of the Lab Inventory System.",
+      "id" : "15",
+      "tags" : [ "Java",
+          "JUnit",
+          "GSon",
+          "RESTful Services",
+          "AngularJS",
+          "Bootstrap",
+          "Javascript"],
+      "title" : "Inventory"
+  }]
