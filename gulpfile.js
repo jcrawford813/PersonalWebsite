@@ -29,7 +29,7 @@ gulp.task('appjsbuild', function() {
 });
 
 gulp.task('libjsbuild', function() {
-    gulp.src(['./app/bower_components/jquery/dist/jquery.min.js', './app/bower_components/angular/angular.js', './app/bower_components/angular-route/angular-route.js', './app/bower_components/angular-animate/angular-animate.min.js'])
+    gulp.src(['./app/bower_components/jquery/dist/jquery.min.js', './app/bower_components/angular/angular.js', './app/bower_components/angular-route/angular-route.js', './app/bower_components/angular-animate/angular-animate.min.js', './app/bower_components/angular-google-analytics/dist/angular-google-analytics.js'])
             .pipe(concat('libscripts.js'))
             .pipe(uglify())
             .pipe(gulp.dest('./build/assets/scripts'));

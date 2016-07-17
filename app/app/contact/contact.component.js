@@ -4,7 +4,8 @@ angular
         .module('personalSiteApp')
         .component('contact', {
             templateUrl: 'app/contact/contact.template.html',
-            controller: ['$http', function ($http) {
+            controller: ['$http', 'Analytics', function ($http, analytics) {
+                    analytics.trackPage('/contact');
                     var self = this;
                     
                     $http.get('assets/data/contact.json').then(function (response) {

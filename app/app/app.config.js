@@ -25,6 +25,12 @@ angular
                         .otherwise({
                             template: '<home></home>'
                         });
-            }]);
+            }])
+            .config(function (AnalyticsProvider) {
+                AnalyticsProvider
+                .setAccount('UA-80904823-1')
+                .useDisplayFeatures(true)
+                .useEnhancedLinkAttribution(true)
+            });
 
 
