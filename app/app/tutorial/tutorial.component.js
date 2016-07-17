@@ -5,7 +5,7 @@ angular
         .component('tutorial', {
             templateUrl:'app/tutorial/tutorial.template.html',
             controller: ['$http', 'Analytics', function ($http, analytics) {
-                    analytics.trackPage('/tutorial');
+                    //analytics.trackPage('/tutorial');
                     return false;
             }]
 });
