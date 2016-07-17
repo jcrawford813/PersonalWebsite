@@ -30,7 +30,7 @@ angular
                 AnalyticsProvider
                 .setAccount('UA-80904823-1')
                 .useDisplayFeatures(true)
-                .useEnhancedLinkAttribution(true)
+                .useEnhancedLinkAttribution(true);
             });
 
 
