@@ -1,7 +1,7 @@
 <div class="navbar navbar-default navbar-fixed-top navbar-subsite">
     <div class="container-fluid">
         <div class="navbar-header">
-            <span class="navbar-brand">Tutorials</span>
+            <span class="navbar-brand">Tutorials / How-To's</span>
         </div>
         <form class="navbar-form navbar-right" role="search">
             <div class="form-group">
@@ -20,6 +20,9 @@
                 </div>
                 <div class="panel-body">                
                     <p>{{ tut.synopsis }}</p>
+                    <div>
+                        <span class="label label-info tag" ng-repeat="tag in tut.tags">{{ tag }}</span>
+                    </div>
                 </div>
             </div>
         </div>
