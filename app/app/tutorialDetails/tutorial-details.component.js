@@ -7,7 +7,7 @@ angular
         controller: ['$http', '$routeParams', 'Analytics', '$rootScope', function ($http, $routeParams, analytics, $rootScope) {
                 var self = this;
                 
-                self.htmlContent;
+                self.htmlContent = "";
                 self.title = "Test";
                 self.synopsis = "More test text.";
                 

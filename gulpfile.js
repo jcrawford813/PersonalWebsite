@@ -13,7 +13,7 @@ var cssclean = require('gulp-clean-css');
 var htmlclean = require('gulp-minify-html');
 var htmlreplace = require('gulp-html-replace');
 
-gulp.task('default', ['jshint', 'appjsbuild', 'libjsbuild', 'stylesbuild', 'indexbuild', 'htmlbuild', 'copyimages', 'copydata']);
+gulp.task('default', ['jshint', 'appjsbuild', 'libjsbuild', 'stylesbuild', 'indexbuild', 'htmlbuild', 'copyimages', 'copytutorials','copydata']);
 
 gulp.task('jshint', function () {
     gulp.src(['./app/app/app.module.js', './app/app/app.config.js', './app/app/**/*.module.js', './app/app/**/*.component.js'])
@@ -64,6 +64,11 @@ gulp.task('htmlbuild', function() {
 gulp.task('copyimages', function () {
     gulp.src(['./app/assets/images/*'])
             .pipe(gulp.dest('./build/assets/images'));
+});
+
+gulp.task('copytutorials', function () {
+    gulp.src(['./app/assets/tutorials/**/*'])
+            .pipe(gulp.dest('./build/assets/tutorials'));
 });
 
 gulp.task('copydata', function () {
