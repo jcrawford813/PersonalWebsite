@@ -5,7 +5,12 @@ angular
         .component('tutorial', {
             templateUrl:'app/tutorial/tutorial.template.html',
             controller: ['$http', 'Analytics', function ($http, analytics) {
-                    //analytics.trackPage('/tutorial');
-                    return false;
+                    var self = this;
+                    
+                    self.orderProp = 'order';
+                    
+                    $http.get('/assets/data/tutorials.json').then(function (response) {
+                       self.tutorials = response.data; 
+                    });
             }]
 });

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My Coding Life</title>
+  <title ng-bind="'My Coding Life &mdash; ' + title"></title>
   <meta name="description" content="The personal site and portfolio of Jim Crawford, Developer, Manager, Architect in Nashville, TN.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="assets/images/favicon.png" />
@@ -21,6 +21,7 @@
   <script src="bower_components/angular-route/angular-route.js"></script>
   <script src="bower_components/angular-animate/angular-animate.min.js"></script>
   <script src="bower_components/angular-google-analytics/dist/angular-google-analytics.js"></script>
+  <script src="bower_components/angular-sanitize/angular-sanitize.min.js"></script>
   <!-- endbuild -->
   
   <!-- build:js -->
@@ -36,13 +37,15 @@
   <script src="app/portfolio-details/portfolio-details.component.js"></script>
   <script src="app/tutorial/tutorial.module.js"></script>
   <script src="app/tutorial/tutorial.component.js"></script>
+  <script src="app/tutorialDetails/tutorial-details.module.js"></script>
+  <script src="app/tutorialDetails/tutorial-details.component.js"></script>
   <!-- endbuild -->
   
   <base href="/" target="_self" />
 </head>
 <body>
     <section id="menu">
-        <div class="navbar navbar-default navbar-inverse">
+        <div class="navbar navbar-default navbar-inverse navbar-fixed-top">
             <div class="container-fluid">
                 <div class="navbar-header">
                     <a class="navbar-brand" href="/">

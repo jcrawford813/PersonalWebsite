@@ -8,7 +8,8 @@ angular.module('personalSiteApp', [
    'contact',
    'portfolio',
    'portfoliodetails',
-   'tutorial'
+   'tutorial',
+   'tutorialdetail'
 ]);
 
 

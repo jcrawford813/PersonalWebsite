@@ -1,4 +1,4 @@
-<div class="navbar navbar-default">
+<div class="navbar navbar-default navbar-fixed-top navbar-subsite">
     <div class="container-fluid">
         <div class="navbar-header">
             <span class="navbar-brand">Application &amp; Technology Portfolio</span>
@@ -11,8 +11,8 @@
     </div>
 </div>
 
-<div class="middle" style="margin-top:30px;">
-    <div class="container-fluid">
+<div class="middle content-container">
+    <div class="container">
         <div class="col-md-6 col-lg-6 list-fade-item" ng-repeat="project in $ctrl.projects | filter:$ctrl.appQuery | orderBy:$ctrl.orderProp">
             <div class="panel panel-primary">
                 <div class="panel-heading">

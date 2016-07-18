@@ -1,13 +1,27 @@
-<div class="navbar navbar-default">
+<div class="navbar navbar-default navbar-fixed-top navbar-subsite">
     <div class="container-fluid">
         <div class="navbar-header">
             <span class="navbar-brand">Tutorials</span>
         </div>
+        <form class="navbar-form navbar-right" role="search">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search" ng-model="$ctrl.appQuery">
+            </div>
+        </form>
     </div>
 </div>
 
-<div class="middle" style="margin-top:30px;">
-    <div class="well">
-        No tutorials have been created or linked.
+<div class="middle content-container">
+    <div class="container">
+        <div class="col-md-6 col-lg-6" ng-repeat="tut in $ctrl.tutorials | filter:$ctrl.appQuery | orderBy:$ctrl.orderProp">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h4><a href="/tutorials/{{tut.name}}" style="text-decoration: none; color:#fff;">{{ tut.title }}</a></h4>
+                </div>
+                <div class="panel-body">                
+                    <p>{{ tut.synopsis }}</p>
+                </div>
+            </div>
+        </div>
     </div>
 </div>

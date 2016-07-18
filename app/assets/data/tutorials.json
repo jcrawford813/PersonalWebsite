@@ -1,0 +1,11 @@
+[
+    {
+        "name" : "Html5_Mode_Angular",
+        "title" : "Setting up HTML 5 mode with Angular JS",
+        "synopsis" : "Want to get rid of those annoying hashes? Want to just go to a url on your Angular site, and have it work? Of course you do. Here's what worked for me...",
+        "body" : "html5_mode_angular.html",
+        "order" : 1,
+        "tags" : ["AngularJS", "Apache", ".htaccess", "Development", "Web Development"]
+    }
+]
+

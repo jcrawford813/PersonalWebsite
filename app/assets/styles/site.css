@@ -6,6 +6,18 @@ body {
     color:green;
 }
 
+.blue {
+    color:blue;
+}
+
+.purple {
+    color:purple;
+}
+
+.orange {
+    color:orange;
+}
+
 .navbar {
     margin-bottom:0;
 }
@@ -32,4 +44,25 @@ body {
 .tag {
     display:inline-block;
     margin-right: 5px;
+}
+
+.img-article {
+    height:auto;
+    max-width: 800px;
+}
+
+.navbar {
+    opacity:0.90;
+}
+
+.navbar-subsite {
+    margin-top:50px;
+}
+
+.content-container {
+    margin-top:130px;
+}
+
+.content-container-sm {
+    margin-top:50px;
 }

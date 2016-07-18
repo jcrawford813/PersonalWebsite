@@ -1,0 +1,72 @@
+<p>
+    Here's the problem: I just put together a site using AngularJS, just to see if I could do it, and 
+    learn yet another JavaScript library in a day or two. You are probably in the same boat, 
+    only it only took you half a day to get to this point (I'm slow, bear with me). Once you get
+    done, you deploy your nice new site, and notice that the hash routing is in place. 
+</p>
+
+<img src="assets/tutorials/images/Angular_Html5_HashTag.png" title="The well-known hashtag." class="img-thumbnail img-article" />
+
+<p>
+    This is fine, except when you want to hand someone a nice link to the inside of your site. Sometimes it works,
+    sometimes (if you have SSO redirects, or other redirects), the content of the url after the hash
+    is unceremoniously dumped out, since it wasn't important.
+</p>
+
+<p>
+    Lucky for us that use modern browsers, AngularJS has a solution. The html5Mode setting within
+    the locationProvider class will allow browsers that can utilize the new setState in browser
+    history to use hashless urls, which gracefully degrading to the hashtags of those that cannot
+    support this functionality.
+</p>
+
+<p>
+    Getting this up and running within your application is actually, pretty simple. We simply change any relative or absolute urls
+    that are in markup to not have the hashtag, for instance <code>/portfolio</code> instead of <code>/#/portfolio</code>.
+    Then we can modify the app.config.js file to include the following when configuring routes:
+    
+<pre>
+    <span class="purple">app</span>
+        .config([<span class="orange">'$locationProvider'</span>, <span class='orange'>'$routeProvider'</span>,
+            <span class="blue">function</span> config($locationProvider, $routeProvider) {
+                $locationProvider.html5Mode(<span class="blue">true</span>);
+                <span class="green">/* Add routing and other configuration here. */</span>
+            }
+        ]);
+</pre>
+
+<p>
+    Easy enough. Once we push this out, and look, then we have it, no hash tags:
+</p>
+
+<img src="assets/tutorials/images/Angular_Html5_NoHash.png" title="No more hashtag." class="img-thumbnail img-article" />
+
+<p>
+    Here's the fun part. When you type in a url, say <code>http://mycodinglife.com/portfolio</code> to simulate a click on an external link,
+    you get a <code>404</code>. The reason for this is that the angular router isn't instantiated, since you do not go through <code>index.html</code>
+    first. There are many examples on what to do here, each slightly different. My particular site is run on an Apache server to which I do not have
+    access to do any configuration. However, we can append a special rewrite rule to the <code>.htaccess</code> file. There are other techniques for
+    doing this in IIS, if needed.
+</p>
+
+<p>
+    What worked for me was adding the following into the <code>.htaccess</code> file in the root of the site:
+</p>
+
+<pre>
+    <span class="purple">Options</span> +FollowSymLinks
+    <span class="purple">RewriteEngine</span> On
+    <span class="purple">RewriteCond</span> %{REQUEST_FILENAME} !-f
+    <span class="purple">RewriteCond</span> %{REQUEST_FILENAME} !-d
+    <span class="purple">RewriteRule</span> ^(.*)$ /index.html [QSA,L]
+</pre>
+
+<p>
+    In essence, this tells Apache that any url that does not match an existing physical or symbolic file or directory will
+    get rewritten to call directly to <code>index.html</code>, which then runs the url through the Angular router, allowing urls
+    to be accessed directly within the site as if it were all physical pages.
+</p>
+
+<p>
+    Hope this helps!
+</p>

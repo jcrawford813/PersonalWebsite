@@ -1,0 +1,13 @@
+<div class="middle" style="margin-top:60px;">
+    <h1>{{ $ctrl.title }}</h1>
+    
+    <p>
+        <span class="label label-info tag" ng-repeat="tag in $ctrl.tags">{{ tag }}</span>
+    </p>
+    
+    <div class="well">
+        <span class="h4">{{ $ctrl.synopsis }}</span>
+    </div>
+
+    <div style="margin-top:20px;" ng-bind-html="$ctrl.htmlContent"></div>
+</div>

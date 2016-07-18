@@ -254,27 +254,6 @@
     "title" : "mycodinglife"
   },
   { "category" : "Web Applications",
-    "comments" : "This site was a simple rewrite from a CRM-based system into a more static webpage. It was done in order for the site to be more easily portable to different hosting providers. I include this in the portfolio because it was done with a more cutting edge technology, and it was my first foray into the Razor syntax in ASP.NET MVC.",
-    "description" : "This is the main site for DSI, a well regarded consulting firm in the Nashville area.",
-    "highlights" : [ "Converted from a dynamic CRM into a faster, more static website.",
-            "Written using ASP.NET MVC 3 shortly before its RTM."
-          ],
-    "id" : "14",
-    "links" : [{ "caption" : "DSI's Website",
-            "url" : "http://decisionsource.com"
-          }],
-    "screenshots" : ["dsi1.PNG",
-            "dsi2.PNG",
-            "dsi3.PNG"
-          ],
-    "tags" : [ "ASP.NET",
-            "MVC",
-            "jQuery",
-            "Subversion"
-          ],
-    "title" : "decisionsource.com"
-  },
-  { "category" : "Web Applications",
       "comments" : "This application is a playground that I use to learn some basics about Java programming, RESTful Services, and JUnit testing. It is very simple, and is getting new commits from time to time as I want to try out new approaches and techniques.",
       "description" : "A test application written in Java as a way to learn accepted standards and gotchas. Will eventually have the functionality of the Lab Inventory System.",
       "id" : "15",
