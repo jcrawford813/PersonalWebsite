@@ -11,20 +11,14 @@
     </div>
 </div>
 
-<div class="middle content-container">
+<div class="container">
     <div class="container">
-        <div class="col-md-6 col-lg-6" ng-repeat="tut in $ctrl.tutorials | filter:$ctrl.appQuery | orderBy:$ctrl.orderProp">
-            <div class="panel panel-primary">
-                <div class="panel-heading">
-                    <h4><a href="/tutorials/{{tut.name}}" style="text-decoration: none; color:#fff;">{{ tut.title }}</a></h4>
-                </div>
-                <div class="panel-body">                
-                    <p>{{ tut.synopsis }}</p>
+        <div class="list-item" ng-repeat="tut in $ctrl.tutorials | filter:$ctrl.appQuery | orderBy:$ctrl.orderProp">
+                    <h4><a href="/tutorials/{{tut.name}}" style="text-decoration: none;">{{ tut.title }}</a></h4>
                     <div>
-                        <span class="label label-info tag" ng-repeat="tag in tut.tags">{{ tag }}</span>
+                        <span class="label label-default tag" ng-repeat="tag in tut.tags">{{ tag }}</span>
                     </div>
-                </div>
-            </div>
+                    <p>{{ tut.synopsis }}</p>               
         </div>
     </div>
 </div>

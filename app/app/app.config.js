@@ -34,12 +34,6 @@ app
                         title: 'Intro',
                         template: '<home></home>'
                     });
-        }])
-        .config(['AnalyticsProvider', function (analytics) {
-            analytics
-            .setAccount('UA-80904823-1')
-            .useDisplayFeatures(true)
-            .useEnhancedLinkAttribution(true);
         }]);
 
 

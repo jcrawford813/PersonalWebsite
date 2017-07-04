@@ -7,6 +7,8 @@
   <meta name="description" content="The personal site and portfolio of Jim Crawford, Developer, Manager, Architect in Nashville, TN.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="assets/images/favicon.png" />
+  <link rel="canonical" href="http://mycodinglife.com" />
+  <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.css">
   
   <!-- build:css -->
   <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
@@ -20,7 +22,6 @@
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/angular-route/angular-route.js"></script>
   <script src="bower_components/angular-animate/angular-animate.min.js"></script>
-  <script src="bower_components/angular-google-analytics/dist/angular-google-analytics.js"></script>
   <script src="bower_components/angular-sanitize/angular-sanitize.min.js"></script>
   <!-- endbuild -->
   
@@ -40,6 +41,7 @@
   <script src="app/tutorialDetails/tutorial-details.module.js"></script>
   <script src="app/tutorialDetails/tutorial-details.component.js"></script>
   <!-- endbuild -->
+  
   
   <base href="/" target="_self" />
 </head>
@@ -63,10 +65,24 @@
             </div>
         </div>
     </section>
+    
+    <div class="container content-container">
+        <div class="col-md-2 col-lg-2 sidebar">
+            <div class="text-center">
+                <img src="assets/images/profile.jpg" class="img-circle" alt="Profile Pic" />
+            </div>
+            <div class="text-center">
+                <h3>Jim Crawford</h3>
+                <p>Dad, Coder, Musician</p>
+            </div>
+        </div>
 
-    <div class="view-container">
-        <div id="content" class="view-frame" ng-view></div>
+        <div class="col-md-10 col-lg-10">
+            <div id="content" class="view-frame" ng-view></div>
+        </div>
     </div>
+    
+    
 
 </body>
 </html>

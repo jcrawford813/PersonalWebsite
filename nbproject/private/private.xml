@@ -2,6 +2,24 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/Users/jim/Source/PersonalWebsite/app/app/portfolio/portfolio.template.html</file>
+            <file>file:/Users/jim/Source/PersonalWebsite/gulpfile.js</file>
+            <file>file:/Users/jim/Source/PersonalWebsite/app/app/app.module.js</file>
+            <file>file:/Users/jim/Source/PersonalWebsite/app/app/contact/contact.component.js</file>
+            <file>file:/Users/jim/Source/PersonalWebsite/app/app/tutorialDetails/tutorial-details.template.html</file>
+            <file>file:/Users/jim/Source/PersonalWebsite/app/app/contact/contact.template.html</file>
+            <file>file:/Users/jim/Source/PersonalWebsite/app/assets/styles/site.css</file>
+            <file>file:/Users/jim/Source/PersonalWebsite/app/app/home/home.component.js</file>
+            <file>file:/Users/jim/Source/PersonalWebsite/app/app/home/home.template.html</file>
+            <file>file:/Users/jim/Source/PersonalWebsite/app/app/portfolio-details/portfolio-details.component.js</file>
+            <file>file:/Users/jim/Source/PersonalWebsite/app/index.html</file>
+            <file>file:/Users/jim/Source/PersonalWebsite/app/app/tutorial/tutorial.component.js</file>
+            <file>file:/Users/jim/Source/PersonalWebsite/app/app/portfolio/portfolio.component.js</file>
+            <file>file:/Users/jim/Source/PersonalWebsite/app/app/tutorialDetails/tutorial-details.component.js</file>
+            <file>file:/Users/jim/Source/PersonalWebsite/app/app/app.config.js</file>
+            <file>file:/Users/jim/Source/PersonalWebsite/app/app/tutorial/tutorial.template.html</file>
+            <file>file:/Users/jim/Source/PersonalWebsite/app/app/portfolio-details/portfolio-details.template.html</file>
+        </group>
     </open-files>
 </project-private>

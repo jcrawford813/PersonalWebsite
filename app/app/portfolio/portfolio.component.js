@@ -4,7 +4,7 @@ angular
         .module('personalSiteApp')
         .component('portfolio', {
             templateUrl: 'app/portfolio/portfolio.template.html',
-            controller: ['$http', 'Analytics', function($http, analytics) {
+            controller: ['$http', function($http) {
                  //analytics.trackPage('/portfolio');
                  var self = this;
                  self.orderProp = "title";

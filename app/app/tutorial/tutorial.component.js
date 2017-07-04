@@ -4,7 +4,7 @@ angular
         .module('personalSiteApp')
         .component('tutorial', {
             templateUrl:'app/tutorial/tutorial.template.html',
-            controller: ['$http', 'Analytics', function ($http, analytics) {
+            controller: ['$http', function ($http) {
                     var self = this;
                     
                     self.orderProp = 'order';

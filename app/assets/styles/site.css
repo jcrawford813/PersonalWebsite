@@ -1,5 +1,6 @@
 body {
     background: url('../images/content-bg.png') top left repeat;
+    font-family: FontAwesome, sans-serif;
 }
 
 .green {
@@ -20,16 +21,6 @@ body {
 
 .navbar {
     margin-bottom:0;
-}
-
-.jumbotron {
-    background-color: #337ab7;
-    color:white;
-}
-
-#blurb, .middle, .middle-contacts {
-    width:85%;
-    margin:auto;
 }
 
 .middle-contacts {
@@ -60,9 +51,15 @@ body {
 }
 
 .content-container {
-    margin-top:130px;
+    width:90%;
+    max-width:1500px;
+    margin: 130px auto;
 }
 
-.content-container-sm {
-    margin-top:50px;
+.list-item {
+    margin-bottom:45px;
+}
+
+.sidebar {
+    max-width: 240px;
 }

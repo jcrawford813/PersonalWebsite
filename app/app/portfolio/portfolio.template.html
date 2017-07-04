@@ -11,20 +11,16 @@
     </div>
 </div>
 
-<div class="middle content-container">
-    <div class="container">
-        <div class="col-md-6 col-lg-6 list-fade-item" ng-repeat="project in $ctrl.projects | filter:$ctrl.appQuery | orderBy:$ctrl.orderProp">
-            <div class="panel panel-primary">
-                <div class="panel-heading">
-                    <h4><a href="/portfolio/{{project.id}}" style="text-decoration: none; color:#fff;">{{ project.title }}</a></h4>
-                </div>
-                <div class="panel-body">                
-                    <p>{{ project.description }}</p>
-                    <div>
-                        <span class="label label-info tag" ng-repeat="tag in project.tags">{{ tag }}</span>
-                    </div>
-                </div>
+<div class="container">
+    <div class="list-fade-item list-item" ng-repeat="project in $ctrl.projects | filter:$ctrl.appQuery | orderBy:$ctrl.orderProp">
+        <h4><a href="/portfolio/{{project.id}}" style="text-decoration: none;">{{ project.title }}</a></h4>
+
+        <div>
+            <div>
+                <span class="label label-default tag" ng-repeat="tag in project.tags">{{ tag }}</span>
             </div>
+
+            <p>{{ project.description }}</p>          
         </div>
     </div>
 </div>

@@ -4,7 +4,7 @@ angular
     .module('personalSiteApp')
     .component('tutorialdetail', {
         templateUrl: 'app/tutorialDetails/tutorial-details.template.html',
-        controller: ['$http', '$routeParams', 'Analytics', '$rootScope', function ($http, $routeParams, analytics, $rootScope) {
+        controller: ['$http', '$routeParams', '$rootScope', function ($http, $routeParams, $rootScope) {
                 var self = this;
                 
                 self.htmlContent = "";
