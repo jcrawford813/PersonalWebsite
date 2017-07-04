@@ -1,6 +1,8 @@
 body {
     background: url('../images/content-bg.png') top left repeat;
-    font-family: FontAwesome, sans-serif;
+    font-family: -apple-system, "PingFang SC","Helvetica Neue", "Hiragino Sans GB", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
+    font-size: 16px;
+    line-height:1.7;
 }
 
 .green {
@@ -62,4 +64,8 @@ body {
 
 .sidebar {
     max-width: 240px;
+}
+
+.img-circle {
+    box-shadow: 0 0 2px black;
 }
